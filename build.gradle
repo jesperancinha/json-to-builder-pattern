@@ -6,7 +6,7 @@ buildscript {
     }
 
     dependencies {
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.3.61"
     }
 }
 
@@ -16,6 +16,7 @@ plugins {
 
 }
 apply plugin: "kotlin"
+apply plugin: "maven"
 
 group 'jesperancinha'
 version '1.0-SNAPSHOT'
