@@ -2,14 +2,9 @@ import com.google.gson.GsonBuilder
 import java.io.BufferedReader
 import java.io.BufferedWriter
 
-fun main(args: Array<String>) {
-
-}
-
 private fun readLinesFromBuffer(bufferedReader: BufferedReader, bufferedWriter: BufferedWriter) {
     val readLines: List<String> = bufferedReader.readLines()
     readLines.forEach { line -> bufferedWriter.write(convertToBuilder(line)) }
-
 }
 
 fun convertToBuilder(line: String): String {
