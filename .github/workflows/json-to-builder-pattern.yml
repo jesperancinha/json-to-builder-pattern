@@ -16,6 +16,8 @@ jobs:
           java-version: '11'
           distribution: 'adopt'
 
+      - name: Gradle Wrapper
+        run: gradle wrapper
       - name: Gradle Build
         run: ./gradlew clean test build
       - name: Coveralls Coverage
