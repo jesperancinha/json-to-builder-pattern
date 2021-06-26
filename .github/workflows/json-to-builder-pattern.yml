@@ -21,7 +21,7 @@ jobs:
       - name: Gradle Build
         run: ./gradlew clean test build
       - name: JaCoco Report
-        run: ./gradlew jacocoTestReport
+        run: ./gradlew build jacocoTestReport
       - name: Coveralls Coverage
         run: ./gradlew coveralls
         env:
