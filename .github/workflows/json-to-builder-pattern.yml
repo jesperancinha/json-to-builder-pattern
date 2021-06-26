@@ -23,7 +23,7 @@ jobs:
       - name: JaCoco Report
         run: ./gradlew build jacocoTestReport
       - name: Coveralls Coverage
-        run: ./gradlew jacocoTestReport coveralls
+        run: ./gradlew build jacocoTestReport coveralls
         env:
            COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
       - name: Codecov Coverage
