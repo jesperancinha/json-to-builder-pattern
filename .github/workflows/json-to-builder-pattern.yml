@@ -20,8 +20,10 @@ jobs:
         run: gradle wrapper
       - name: Gradle Build
         run: ./gradlew clean test build
+      - name: JaCoco Report
+        run: ./gradlew jacocoTestReport
       - name: Coveralls Coverage
-        run: ./gradlew build jacocoTestReport coveralls
+        run: ./gradlew coveralls
         env:
            COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
       - name: Codecov Coverage
