@@ -16,10 +16,10 @@ jobs:
           java-version: '11'
           distribution: 'adopt'
 
-      - name: Build
-        run: mvn clean install
+      - name: Gradle Build
+        run: ./gradlew clean test build
       - name: Coveralls Coverage
-        run: mvn coveralls:report -Dconsolerizer.show=false -DrepoToken=${COVERALLS_REPO_TOKEN}
+        run: ./gradlew build jacocoTestReport coveralls
         env:
            COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
       - name: Codecov Coverage
@@ -27,6 +27,6 @@ jobs:
         env:
            CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
       - name: Codacy Coverage
-        run: bash <(curl -Ls https://coverage.codacy.com/get.sh) report -l Java Kotlin $(find **/jacoco*.xml -printf '-r %p ')
+        run: bash <(curl -Ls https://coverage.codacy.com/get.sh) report -l Java $(find **/jacoco*.xml -printf '-r %p ')
         env:
-          CODACY_PROJECT_TOKEN: ${{ secrets.CODACY_PROJECT_TOKEN }}
+           CODACY_PROJECT_TOKEN: ${{ secrets.CODACY_PROJECT_TOKEN }}
