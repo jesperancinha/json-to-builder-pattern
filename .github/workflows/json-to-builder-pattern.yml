@@ -1,4 +1,5 @@
 name: json-to-builder-pattern
+on: [push]
 jobs:
   build:
 
