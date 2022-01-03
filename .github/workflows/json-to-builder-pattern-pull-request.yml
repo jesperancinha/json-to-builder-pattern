@@ -1,4 +1,4 @@
-name: json-to-builder-pattern
+name: json-to-builder-pattern-pull-request
 
 on:
   pull_request:
