@@ -36,6 +36,7 @@ jacocoTestReport {
 }
 
 coveralls {
+    sourceDirs += ['src/main/kotlin']
     jacocoReportPath 'build/reports/jacoco/test/jacocoTestReport.xml'
 }
 
