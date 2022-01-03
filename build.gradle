@@ -30,16 +30,13 @@ cobertura.coverageFormats = ['html', 'xml']
 
 jacocoTestReport {
     reports {
-        html.enabled = true
-        xml {
-            enabled = true
-            destination "${rootDir}/build/reports/jacoco/test/jacocoTestReport.xml"
-        }
+        xml.enabled = true
+        xml.destination = file("${rootDir}/build/reports/jacoco/test/jacocoTestReport.xml")
     }
 }
 
 coveralls {
-    jacocoReportPath '${rootDir}/build/reports/jacoco/test/jacocoTestReport.xml'
+    jacocoReportPath 'build/reports/jacoco/test/jacocoTestReport.xml'
 }
 
 sourceSets {
