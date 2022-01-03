@@ -4,6 +4,7 @@ on:
   pull_request:
     branches: [ master ]
 
+jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
