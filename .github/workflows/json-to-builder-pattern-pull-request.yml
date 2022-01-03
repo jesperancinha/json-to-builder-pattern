@@ -22,14 +22,4 @@ jobs:
       - name: Gradle Wrapper
         run: gradle wrapper
       - name: Gradle Build
-        run: ./gradlew clean test build
-      - name: JaCoco Report
-        run: ./gradlew build jacocoTestReport
-      - name: Coveralls Coverage
-        run: ./gradlew build jacocoTestReport coveralls
-        env:
-           COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
-      - name: Codecov Coverage
-        run: bash <(curl -s https://codecov.io/bash)
-        env:
-           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+        run: ./gradlew clean test build jacocoTestReport
