@@ -23,9 +23,6 @@ apply plugin: "kotlin"
 group 'jesperancinha'
 version '1.0-SNAPSHOT'
 
-sourceCompatibility = 11
-targetCompatibility = 11
-
 cobertura.coverageFormats = ['html', 'xml']
 
 jacocoTestReport {
