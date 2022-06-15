@@ -7,7 +7,7 @@ jobs:
   build:
     docker:
     # specify the version you desire here
-    - image: eclipse-temurin:11-jdk
+    - image: cimg/openjdk:11.0.13
 
     # Specify service dependencies here if necessary
     # CircleCI maintains a library of pre-built images
@@ -24,12 +24,6 @@ jobs:
     steps:
     - checkout
 
-    # Download and cache dependencies
-    - restore_cache:
-        keys:
-        - v1-dependencies-{{ checksum "build.gradle" }}
-        # fallback to using the latest cache if no exact match is found
-        - v1-dependencies-
     - run: gradle wrapper --gradle-version 7.4.2 --distribution-type all
     - run: ./gradlew clean build
 
