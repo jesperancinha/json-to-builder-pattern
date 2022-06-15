@@ -24,7 +24,7 @@ jobs:
     steps:
     - checkout
 
-    - run: gradle wrapper --gradle-version 7.4.2 --distribution-type all
+    - run: gradle wrapper
     - run: ./gradlew clean build
 
     - save_cache:
