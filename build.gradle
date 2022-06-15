@@ -42,10 +42,8 @@ coveralls {
 }
 
 sourceSets {
-    main.kotlin.srcDirs += 'src/main/myKotlin'
-    main.java.srcDirs += 'src/main/myJava'
+    main.kotlin.srcDirs += 'src/main/kotlin'
 }
-
 
 repositories {
     mavenCentral()
