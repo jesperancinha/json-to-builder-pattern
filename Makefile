@@ -3,5 +3,7 @@ b: buildw
 buildw:
 	./gradlew --stop
 	./gradlew build
+test: b
+	./gradlew test
 update:
 	gradle wrapper --gradle-version 7.6

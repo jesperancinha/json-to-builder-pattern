@@ -19,7 +19,7 @@ jobs:
             - v1-dependencies-{{ checksum "build.gradle" }}
             - v1-dependencies-
 
-      - run: ./gradlew clean build test -i && ./gradlew -i
+      - run: make test
 
       - save_cache:
           paths:
