@@ -19,6 +19,7 @@ jobs:
             - v1-dependencies-{{ checksum "build.gradle" }}
             - v1-dependencies-
 
+      - run: apt upgrade && apt update
       - run: apt install make -y
       - run: make test
 
