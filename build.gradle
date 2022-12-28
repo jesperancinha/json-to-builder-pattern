@@ -6,15 +6,14 @@ buildscript {
     }
 
     dependencies {
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.7.22"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.0"
     }
 }
 
 plugins {
-    id 'net.saliman.cobertura' version '4.0.0'
-    id 'com.github.kt3k.coveralls' version '2.12.0'
     id 'jacoco'
-    id "org.jetbrains.kotlin.jvm" version "1.7.22"
+    id "org.jetbrains.kotlin.jvm" version "1.8.0"
+    id("org.jesperancinha.plugins.omni") version "0.3.0"
 }
 
 
@@ -23,19 +22,11 @@ apply plugin: "kotlin"
 group 'jesperancinha'
 version '1.0-SNAPSHOT'
 
-cobertura.coverageFormats = ['html', 'xml']
-
 jacocoTestReport {
     reports {
-        xml.enabled = true
-        xml.destination = file("${rootDir}/build/reports/jacoco/test/jacocoTestReport.xml")
+        xml.enabled(true)
+        xml.destination(file("${rootDir}/build/reports/jacoco/test/jacocoTestReport.xml"))
     }
-}
-
-coveralls {
-    sourceDirs += ['src/main/kotlin']
-    project.extensions.coveralls.sourceDirs += project.sourceSets.main.kotlin.srcDirs
-    jacocoReportPath 'build/reports/jacoco/test/jacocoTestReport.xml'
 }
 
 sourceSets {
@@ -62,8 +53,8 @@ dependencies {
 }
 
 compileKotlin {
-    kotlinOptions.jvmTarget = "11"
+    kotlinOptions.jvmTarget = "19"
 }
 compileTestKotlin {
-    kotlinOptions.jvmTarget = "11"
+    kotlinOptions.jvmTarget = "19"
 }
