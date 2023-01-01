@@ -11,7 +11,6 @@
 
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/7537ed9b017f44d9b90123b071c6895e)](https://www.codacy.com/gh/jesperancinha/json-to-builder-pattern/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=jesperancinha/json-to-builder-pattern&amp;utm_campaign=Badge_Grade)
 [![codebeat badge](https://codebeat.co/badges/a31f7842-1e43-40d4-a7f8-382799136a0f)](https://codebeat.co/projects/github-com-jesperancinha-json-to-builder-pattern-master)
-[![BCH compliance](https://bettercodehub.com/edge/badge/jesperancinha/json-to-builder-pattern?branch=master)](https://bettercodehub.com/)
 
 [![Codacy Badge](https://app.codacy.com/project/badge/Coverage/7537ed9b017f44d9b90123b071c6895e)](https://www.codacy.com/gh/jesperancinha/json-to-builder-pattern/dashboard?utm_source=github.com&utm_medium=referral&utm_content=jesperancinha/json-to-builder-pattern&utm_campaign=Badge_Coverage)
 [![codecov](https://codecov.io/gh/jesperancinha/json-to-builder-pattern/branch/master/graph/badge.svg?token=0l808Wjjgr)](https://codecov.io/gh/jesperancinha/json-to-builder-pattern)
