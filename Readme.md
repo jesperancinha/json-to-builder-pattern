@@ -7,7 +7,7 @@
 
 [![CircleCI](https://circleci.com/gh/jesperancinha/json-to-builder-pattern.svg?style=svg)](https://circleci.com/gh/jesperancinha/json-to-builder-pattern)
 [![Build status](https://ci.appveyor.com/api/projects/status/7mrp30lciy4x1s70?svg=true)](https://ci.appveyor.com/project/jesperancinha/json-to-builder-pattern)
-[![.github/workflows/json-to-builder-pattern.yml](https://github.com/jesperancinha/json-to-builder-pattern/actions/workflows/json-to-builder-pattern.yml/badge.svg?branch=master)](https://github.com/jesperancinha/json-to-builder-pattern/actions/workflows/json-to-builder-pattern.yml)
+[![json-to-builder-pattern](https://github.com/jesperancinha/json-to-builder-pattern/actions/workflows/json-to-builder-pattern.yml/badge.svg)](https://github.com/jesperancinha/json-to-builder-pattern/actions/workflows/json-to-builder-pattern.yml)
 
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/7537ed9b017f44d9b90123b071c6895e)](https://www.codacy.com/gh/jesperancinha/json-to-builder-pattern/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=jesperancinha/json-to-builder-pattern&amp;utm_campaign=Badge_Grade)
 [![codebeat badge](https://codebeat.co/badges/a31f7842-1e43-40d4-a7f8-382799136a0f)](https://codebeat.co/projects/github-com-jesperancinha-json-to-builder-pattern-master)
