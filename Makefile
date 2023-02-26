@@ -5,5 +5,5 @@ buildw:
 	./gradlew build
 test: b
 	./gradlew test
-update:
-	gradle wrapper --gradle-version 7.6
+upgrade:
+	gradle wrapper --gradle-version 8.0.1

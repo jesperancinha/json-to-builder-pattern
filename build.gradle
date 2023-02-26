@@ -24,7 +24,7 @@ version '1.0-SNAPSHOT'
 
 jacocoTestReport {
     reports {
-        xml.enabled(true)
+        xml.required = true
         xml.destination(file("${rootDir}/build/reports/jacoco/test/jacocoTestReport.xml"))
     }
 }
@@ -53,8 +53,8 @@ dependencies {
 }
 
 compileKotlin {
-    kotlinOptions.jvmTarget = "17"
+    kotlinOptions.jvmTarget = "19"
 }
 compileTestKotlin {
-    kotlinOptions.jvmTarget = "17"
+    kotlinOptions.jvmTarget = "19"
 }
