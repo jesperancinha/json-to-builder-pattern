@@ -21,8 +21,7 @@ jobs:
 
       - run: apt upgrade && apt update
       - run: apt install make -y
-      - run: make update
-      - run: make test
+      - run: make b
 
       - save_cache:
           paths:
