@@ -47,7 +47,7 @@ dependencies {
     testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.9.2'
     testImplementation group: 'org.assertj', name: 'assertj-core', version: '3.24.2'
     testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.9.2'
-    testImplementation("io.kotest:kotest-assertions-core-jvm:5.5.5")
+    testImplementation("io.kotest:kotest-assertions-core-jvm:5.6.0")
     testImplementation("io.kotest:kotest-framework-engine-jvm:5.6.0")
     testImplementation group: 'io.kotest', name: 'kotest-runner-junit5-jvm', version: '5.6.0'
 }
