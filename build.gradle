@@ -45,7 +45,7 @@ dependencies {
     implementation group: 'org.jetbrains.kotlin', name: 'kotlin-stdlib', version: '1.9.22'
     implementation group: 'com.google.code.gson', name: 'gson', version: '2.10.1'
     testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.10.1'
-    testImplementation group: 'org.assertj', name: 'assertj-core', version: '3.25.1'
+    testImplementation group: 'org.assertj', name: 'assertj-core', version: '3.25.2'
     testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.10.1'
     testImplementation("io.kotest:kotest-assertions-core-jvm:5.8.0")
     testImplementation("io.kotest:kotest-framework-engine-jvm:5.8.0")
