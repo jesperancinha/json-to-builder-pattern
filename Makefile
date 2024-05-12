@@ -1,11 +1,19 @@
 SHELL := /bin/bash
-GRADLE_VERSION ?= 8.1.1
+GRADLE_VERSION ?= 8.7
 
 b: buildw
 	echo "Built!"
 buildw:
 	./gradlew --stop
 	./gradlew build
+wrapper:
+	gradle wrapper
+build-test:
+	./gradlew clean test build
+reports:
+	./gradlew clean build test jacocoTestReport -i
+send-reports:
+	./gradlew -i
 test: b
 	./gradlew test
 upgrade:
@@ -31,3 +39,4 @@ install-linux:
 	sudo apt-get install jq
 	sudo apt-get install curl
 	curl https://services.gradle.org/versions/current
+local-pipeline: wrapper build-test reports send-reports

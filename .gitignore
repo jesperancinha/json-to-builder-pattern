@@ -25,7 +25,7 @@ hs_err_pid*
 # gradle files
 .gradle
 out
-gradle
+gradle/wrapper
 build
 
 # Intellij
