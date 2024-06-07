@@ -3,7 +3,7 @@ kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version = "2.0.0" }
 jesperancinha-omni = { id = "org.jesperancinha.plugins.omni", version = "0.3.1" }
 
 [libraries]
-kotest-runner-junit5-jvm = { group = "io.kotest", name = "kotest-runner-junit5-jvm", version = "5.9.0" }
+kotest-runner-junit5-jvm = { group = "io.kotest", name = "kotest-runner-junit5-jvm", version = "5.9.1" }
 kotest-framework-engine-jvm = { group = "io.kotest", name = "kotest-framework-engine-jvm", version = "5.9.1" }
 kotest-assertions = { group = "io.kotest", name = "kotest-assertions-core", version = "5.9.1" }
 kotlin-stdlib = { group = "org.jetbrains.kotlin", name = "kotlin-stdlib", version = "2.0.0" }
