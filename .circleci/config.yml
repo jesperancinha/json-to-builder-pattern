@@ -19,7 +19,8 @@ jobs:
             - v1-dependencies-{{ checksum "build.gradle.kts" }}
             - v1-dependencies-
 
-      - run: apk add make
+      - run: apt upgrade && apt update
+      - run: apt install make -y
       - run: make upgrade
       - run: make b
 
