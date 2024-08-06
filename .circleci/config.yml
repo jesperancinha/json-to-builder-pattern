@@ -3,7 +3,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: gradle:8.0.1-jdk19
+      - image: gradle:jdk21
 
     working_directory: ~/repo
 
@@ -19,8 +19,7 @@ jobs:
             - v1-dependencies-{{ checksum "build.gradle.kts" }}
             - v1-dependencies-
 
-      - run: apt upgrade && apt update
-      - run: apt install make -y
+      - run: apk add make
       - run: make upgrade
       - run: make b
 
