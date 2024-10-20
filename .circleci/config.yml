@@ -3,7 +3,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: gradle:jdk21
+      - image: gradle:jdk11
 
     working_directory: ~/repo
 
